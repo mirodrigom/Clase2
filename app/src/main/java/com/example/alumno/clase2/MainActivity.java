@@ -19,5 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
         btn.setOnClickListener(new MyListener(txt,edt));
 */
+
+        Button btnGuardar = (Button)super.findViewById(R.id.btnGuardar);
+        btnGuardar.setOnClickListener(new MyListener(DESPUESPONERACAELRESTO);
     }
 }
