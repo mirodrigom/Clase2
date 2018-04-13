@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 /**
@@ -16,30 +17,21 @@ Implemento una interfaz de view on click listener y el metodo de la lamparita.
 
     public class MyListener implements View.OnClickListener{
 
-        private EditText nombre;
-        private EditText apellido;
-        private EditText dni;
-        private RadioButton sexo;
-        public MyListener(EditText nom, EditText ape, EditText docu, RadioButton sex)
+
+        Controlador con;
+        public MyListener(Controlador c)
         {
-            this.nombre = nom;
-            this.apellido = ape;
-            this.dni = docu;
-            this.sexo = sex;
+            this.con = c;
         }
 
         //Este metodo va a escuchar el boton onclick.
         @Override
-        public void onClick(View v) {
+        public void onClick(View v)
+        {
+            //v.findViewById(R)
+            Persona p = this.con.getVista().getPersona();
+            Log.d("algo",p.getNombre());
 
-            Button bnt = (Button)(v.findViewById(R.id.btnGuardar));
-            /*
-            if(bnt.get("Guardar"))
-            {
-
-            }*/
-
-            Log.d("Click","Se hizo click");
         }
 
 }

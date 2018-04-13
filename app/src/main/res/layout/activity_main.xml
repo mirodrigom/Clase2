@@ -25,7 +25,7 @@
             android:textSize="20dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Ingrese su nombre:" />
+            android:text="@string/IntroduceName"/>
 
         <EditText
             android:id="@+id/edtNombre"
@@ -44,7 +44,7 @@
             android:textSize="20dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Ingrese su apellido:"/>
+            android:text="@string/IntroduceSurname"/>
 
         <EditText
             android:id="@+id/edtApellido"
@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
-            android:text="DNI:"/>
+            android:text="@string/IntroduceDni"/>
 
         <EditText
             android:id="@+id/edtDni"
@@ -80,26 +80,29 @@
            android:id="@+id/txtView4"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="Sexo:"
+           android:text="@string/IntroduceSex"
         android:layout_marginTop="10dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
-                <RadioButton
-                    android:id="@+id/rbtHombre"
+                <RadioGroup
+                    android:id="@+id/radioGroupSex"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Hombre"/>
+                    android:layout_height="match_parent">
+                    <RadioButton
+                        android:id="@+id/rbtHombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/SexMale"/>
 
-                <RadioButton
-                    android:id="@+id/rbtMujer"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Mujer"/>
-
+                    <RadioButton
+                        android:id="@+id/rbtMujer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/SexFemale"/>
+                </RadioGroup>
             </LinearLayout>
     </LinearLayout>
 
@@ -109,7 +112,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/save"
-            android:text="Guardar"
+            android:text="@string/Save"
             android:layout_gravity="center_horizontal|center_vertical"/>
 
 

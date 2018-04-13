@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Clase2</string>
-    <string name="otro">Botonsito</string>
+    <string name="IntroduceName">Ingrese su nombre:</string>
+    <string name="IntroduceSurname">Ingrese su apellido:</string>
+    <string name="IntroduceDni">DNI:</string>
+    <string name="IntroduceSex">Sexo:</string>
+    <string name="SexMale">Hombre</string>
+    <string name="SexFemale">Mujer</string>
+    <string name="Save">Guardar</string>
 </resources>
